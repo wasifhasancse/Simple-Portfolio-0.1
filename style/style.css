@@ -29,6 +29,11 @@
   letter-spacing: 0.8px;
 }
 
+.primary-btn:hover {
+  background: #fff;
+  color: #fd6e0a;
+}
+
 .secondary-btn {
   padding: 10px 40px;
   color: #fd6e0a;
@@ -38,6 +43,12 @@
   text-align: center;
   text-decoration: none;
   letter-spacing: 0.8px;
+}
+
+.secondary-btn:hover {
+  background: #fff8f3;
+  color: #181818;
+  border: 2px solid #fd6e0a;
 }
 
 .section-header-title {
@@ -154,7 +165,7 @@ header {
   margin: 150px auto;
 }
 
-.my-resume-container{
+.my-resume-container {
   margin: 150px auto;
   text-align: center;
 }
@@ -182,112 +193,131 @@ header {
 /* about me section style end */
 
 /* experience-card section style start  */
-.experience-card-container{
+.experience-card-container {
   margin-top: 50px;
   gap: 20px;
   flex-wrap: wrap;
   align-items: stretch;
 }
 
-.experience-card{
+.experience-card {
   max-width: 270px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 30px;
   border-radius: 8px;
-  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
 }
 
-.experience-card h2{
+.experience-card h2 {
   font-size: 18px;
   color: #181818;
 }
 
-.experience-card p{
+.experience-card p {
   color: #181818;
-  opacity: .6;
+  opacity: 0.6;
   line-height: 30px;
 }
 
-.experience-card img{
+.experience-card img {
   max-width: 50px;
 }
 /* experience-card section style end */
 
 /* my-resume section style start  */
-.my-resume{
+.my-resume {
   gap: 20px;
   text-align: left;
   margin: 80px auto;
 }
 
-.my-education h2, .education-experience h2{
+.my-education h2,
+.education-experience h2 {
   font-size: 28px;
   color: #181818;
-  opacity: .9;
+  opacity: 0.9;
 }
 
-.education-card{
+.education-card {
   margin: 30px 0;
 }
 
-.education-card h2{
+.education-card h2 {
   color: #181818;
   font-size: 20px;
-  opacity: .9;
+  opacity: 0.9;
 }
 
-.education-card h3{
+.education-card h3 {
   color: #181818;
   font-size: 16px;
-  opacity: .7;
+  opacity: 0.7;
   margin: 10px 0 20px;
 }
 
-.education-card p{
+.education-card p {
   color: #181818;
   font-size: 16px;
-  opacity: .6;
+  opacity: 0.6;
   line-height: 30px;
 }
 
-hr{
+hr {
   background: #181818;
   height: 3px;
-  opacity: .1;
+  opacity: 0.1;
 }
 /* my-resume section style end */
 
 /* footer section style start  */
-.footer{
+.footer {
   background: #fff8f3;
   padding: 80px 0;
 }
 
-.footer-info{
+.footer-info {
   max-width: 560px;
 }
 
-.footer-info h2{
+.footer-info h2 {
   color: #181818;
   font-size: 28px;
 }
 
-.footer-info P{
+.footer-info P {
   color: #181818;
   font-size: 16px;
-  opacity: .7;
+  opacity: 0.7;
   margin: 20px 0;
 }
 
-.footer-info .social{
+.footer-info .social {
   display: flex;
   gap: 20px;
   font-size: 28px;
 }
 
-.footer-info .social a{
+.footer-info .social a {
   color: #181818;
+}
+
+.footer-contact,
+.footer-contact form {
+  max-width: 460px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-contact form .input {
+  padding: 20px 30px;
+  font-size: 16px;
+  color: #181818;
+  background: #fff;
+  border: 1px solid #fff8f3;
 }
 /* footer section style end */
