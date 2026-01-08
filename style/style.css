@@ -6,7 +6,7 @@
 }
 
 /* common class style  */
-.center{
+.center {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -26,7 +26,7 @@
   border-radius: 4px;
   text-align: center;
   text-decoration: none;
-  letter-spacing: .8px;
+  letter-spacing: 0.8px;
 }
 
 .secondary-btn {
@@ -37,11 +37,24 @@
   border-radius: 4px;
   text-align: center;
   text-decoration: none;
-  letter-spacing: .8px;
+  letter-spacing: 0.8px;
+}
+
+.section-header-title {
+  font-size: 32px;
+  color: #181818;
+  margin-bottom: 20px;
+}
+
+.section-header-subtitle {
+  font-size: 16px;
+  color: #181818;
+  opacity: 0.8;
+  line-height: 30px;
 }
 /* common clss style end  */
 
-header{
+header {
   background: url("../images/developer.png"), url("../images/header_bg.png");
   background-position: 25px 30px, right bottom;
   background-repeat: no-repeat;
@@ -57,13 +70,13 @@ header{
   margin-bottom: 50px;
 }
 
-.nav .logo h1{
+.nav .logo h1 {
   color: #181818;
   font-size: 40px;
   font-weight: 800;
 }
 
-.nav .logo span{
+.nav .logo span {
   color: #fd6e0a;
 }
 
@@ -73,7 +86,7 @@ header{
   gap: 30px;
 }
 
-.nav .nav-link .nav-item{
+.nav .nav-link .nav-item {
   text-decoration: none;
   color: #181818;
   font-size: 16px;
@@ -82,25 +95,25 @@ header{
 /* navigation section style end */
 
 /* hero section style start  */
-.hero{
+.hero {
   margin: 80px 0 0 0;
 }
 
-.hero .hero-info{
+.hero .hero-info {
   display: flex;
   flex-direction: column;
   gap: 20px;
   max-width: 580px;
 }
 
-.hero .hero-info h2{
-font-size: 45px;
-font-weight: 500;
-color: #181818;
-opacity: .8;
+.hero .hero-info h2 {
+  font-size: 45px;
+  font-weight: 500;
+  color: #181818;
+  opacity: 0.8;
 }
 
-.hero .hero-info h1{
+.hero .hero-info h1 {
   font-size: 85px;
   font-weight: 800;
   color: #181818;
@@ -108,21 +121,21 @@ opacity: .8;
   letter-spacing: 1px;
 }
 
-.hero .hero-info p{
+.hero .hero-info p {
   font-size: 18px;
   color: #181818;
-  opacity: .6;
+  opacity: 0.6;
   line-height: 30px;
 }
 
-.hero-btn{
+.hero-btn {
   margin-top: 40px;
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-.hero .hero-image img{
+.hero .hero-image img {
   width: 100%;
   max-width: 580px;
   vertical-align: middle;
@@ -130,8 +143,8 @@ opacity: .8;
 /* hero section style end */
 
 /* about me section style start  */
-.about-me{
-  background: #FFF8F3;
+.about-me {
+  background: #fff8f3;
   border-radius: 8px;
   padding: 80px;
   display: flex;
@@ -141,37 +154,140 @@ opacity: .8;
   margin: 150px auto;
 }
 
-.about-me .about-me-info{
-text-align: center;
+.my-resume-container{
+  margin: 150px auto;
+  text-align: center;
 }
 
-.about-me .about-me-info h2{
-font-size: 32px;
-color: #181818;
-margin-bottom: 20px;
+.about-me .about-me-info,
+.experience-info {
+  text-align: center;
 }
-
-.about-me .about-me-info p{
-font-size: 16px;
-color: #181818;
-opacity: .8;
-line-height: 30px;
-}
-
 
 .about-me-cards {
   text-align: center;
   gap: 80px;
 }
 
-.about-me-cards .about-me-card p{
+.about-me-cards .about-me-card p {
   color: #181818;
-  opacity: .6;
+  opacity: 0.6;
 }
 
-.about-me-cards .about-me-card h2{
+.about-me-cards .about-me-card h2 {
   font-size: 18px;
   color: #181818;
-  opacity: .8;
+  opacity: 0.8;
 }
 /* about me section style end */
+
+/* experience-card section style start  */
+.experience-card-container{
+  margin-top: 50px;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.experience-card{
+  max-width: 270px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+.experience-card h2{
+  font-size: 18px;
+  color: #181818;
+}
+
+.experience-card p{
+  color: #181818;
+  opacity: .6;
+  line-height: 30px;
+}
+
+.experience-card img{
+  max-width: 50px;
+}
+/* experience-card section style end */
+
+/* my-resume section style start  */
+.my-resume{
+  gap: 20px;
+  text-align: left;
+  margin: 80px auto;
+}
+
+.my-education h2, .education-experience h2{
+  font-size: 28px;
+  color: #181818;
+  opacity: .9;
+}
+
+.education-card{
+  margin: 30px 0;
+}
+
+.education-card h2{
+  color: #181818;
+  font-size: 20px;
+  opacity: .9;
+}
+
+.education-card h3{
+  color: #181818;
+  font-size: 16px;
+  opacity: .7;
+  margin: 10px 0 20px;
+}
+
+.education-card p{
+  color: #181818;
+  font-size: 16px;
+  opacity: .6;
+  line-height: 30px;
+}
+
+hr{
+  background: #181818;
+  height: 3px;
+  opacity: .1;
+}
+/* my-resume section style end */
+
+/* footer section style start  */
+.footer{
+  background: #fff8f3;
+  padding: 80px 0;
+}
+
+.footer-info{
+  max-width: 560px;
+}
+
+.footer-info h2{
+  color: #181818;
+  font-size: 28px;
+}
+
+.footer-info P{
+  color: #181818;
+  font-size: 16px;
+  opacity: .7;
+  margin: 20px 0;
+}
+
+.footer-info .social{
+  display: flex;
+  gap: 20px;
+  font-size: 28px;
+}
+
+.footer-info .social a{
+  color: #181818;
+}
+/* footer section style end */
