@@ -200,6 +200,8 @@ header {
 .experience-card-container {
   margin-top: 50px;
   gap: 20px;
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   align-items: stretch;
 }
